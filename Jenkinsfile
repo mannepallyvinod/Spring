@@ -4,7 +4,7 @@ pipeline {
   stages {
   	stage('Maven Install') {
     	agent {
-      	none   {
+      	any   {
                image 'maven:3.8.6'
         }
       }
